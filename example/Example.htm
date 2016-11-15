@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>SelectElement.js</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript" src="SelectElement.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            /*Example 1*/
+            $("select.selectsingle").Selectoptions({ data: [2] })
+            /*Example 2*/
+            $("select.selectmultiple").Selectoptions({ data: [1, 2] });
+            /*Example 3*/
+            $("select.selectmultiplejson").Selectoptions({ comparewith: "label", datasource: "json", data: [{ label: "1", Caption: "One" }, { label: "3", Caption: "Three"}] })
+        });
+    </script>
+</head>
+<body class="container" style="padding-top: 15px;">
+    <h2>Selectoptions.js</h2>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Single Value</div>
+        <div class="panel-body">
+            <div class="form-group" style="margin-bottom: 0px;">
+                <select class="form-control selectsingle">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">4</option>
+                </select>
+                For example, <code>$("select.selectsingle").Selectoptions({data:[2]})</code>.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Javascript Array</div>
+        <div class="panel-body">
+            <div class="form-group" style="margin-bottom: 0px;">
+                <select class="form-control selectmultiple" multiple="multiple">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">4</option>
+                </select>
+                For example, <code>$("select.selectmultiple").Selectoptions({data:[1,2]})</code>.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Json datasource</div>
+        <div class="panel-body">
+            <div class="form-group" style="margin-bottom: 0px;">
+                <select class="form-control selectmultiplejson" multiple="multiple">
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                For example, <code>$("select.selectmultiplejson").Selectoptions({comparewith: "label",datasource:"json",data:[{label:"1",Caption:"One"},{label:"3",Caption:"Three"}]})</code>.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
