@@ -1,7 +1,5 @@
-# Selectoption
-Description :
-    Plugin select single/ multiple options of select element with provided datasource.
-    Currently plugin supports three sources i.e single value, array, Json object.
+# SelectOption - Handy way to select options.
+Plugin select single/ multiple options of select element with provided datasource. Currently plugin supports three sources i.e single value, array, Json object.
 
 ## Parameters 
     - datasource  : singlevalue, array, json.
