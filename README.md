@@ -4,9 +4,9 @@ Description :
     Currently plugin supports three sources i.e single value, array, Json object.
 
 ## Parameters 
-    1. datasource  : singlevalue,array,json.
-    2. data        : data to be selected.
-    3. comparewith : Label of json object used to compare with value. 
+    - datasource  : singlevalue, array, json.
+    - data        : Data that need to be selected.
+    - comparewith : Attrbiute of json object that will be used to compare with element value.
 
 ## Example 1
 ```javascript
