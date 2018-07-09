@@ -3,7 +3,7 @@ Description :
     Plugin select single/ multiple options of select element with provided datasource.
     Currently plugin supports three sources i.e single value, array, Json object.
 
-##Parameters   :
+## Parameters 
     1. datasource  : singlevalue,array,json.
     2. data        : data to be selected.
     3. comparewith : Label of json object used to compare with value. 
